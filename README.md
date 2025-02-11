@@ -1,5 +1,5 @@
 # IT3280E (Assembly Language and Computer Architecture Lab)
-Coursework and class material for IT3280E. HUST students (especially ICT) can use this as a reference or guide to help you through the course.
+Coursework and class material for IT3280E. HUST students (especially ICT) can use this as a reference or guide to help you through the course as my code isn't 100% correct
 
 I will not take any responsibility for any consequences you may face. 
 
