@@ -1,0 +1,10 @@
+slt t0, s1, zero  # t0 = 1 if s1 < 0
+neg s0, s1        # s0 = -s1 (in case s1 < 0)
+movz s0, s1, t0   # if t0 == 0 (s1 >= 0), s0 = s1
+
+addi s0, s1, 0  # s0 = s1 (add immediate 0 to s1)
+
+xori s0, s0, -1  # s0 = s0 ^ 0xFFFFFFFF (bitwise invert)
+
+bge s2, s1, label  # branch to label if s1 <= s2
+

@@ -1,0 +1,23 @@
+# Laboratory Exercise 4, Assignment 2
+.data
+.text
+main:
+    # Initialize s0
+    li s0, 0x12345678
+
+    # 1. Extract MSB of s0
+    li t3, 24           # Load the shift amount into t3
+    srl t0, s0, t3      # Shift s0 right by t3 to extract MSB
+
+    # 2. Clear LSB of s0 
+    li t1, 0xFFFFFF00   # Mask to clear the LSB
+    and s0, s0, t1      # Clear LSB of s0 
+
+    # 3. Set LSB of s0 to 0xFF
+    li t2, 0x000000FF   # Mask to set the LSB to 0xFF
+    or s0, s0, t2       # Set LSB to 0xFF
+
+    # 4. Clear s0
+    xor s0, s0, s0      # s0 = 0
+    
+    nop 
